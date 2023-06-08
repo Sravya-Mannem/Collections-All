@@ -42,11 +42,16 @@ public class Hashset {
 		
 		hs.remove(0);
 		hs.remove(12);
+		
 		System.out.println(hs);
 		
 		List<Integer> list_hash=new ArrayList<>(hs);
 		
 		Collections.sort(list_hash);
+		System.out.println("Elements in Hashset after sorting : "+list_hash);
+		
+		System.out.println("2nd element in the list after altering the hashset "+list_hash.get(1));
+		
 		System.out.println(list_hash);
 		
 		for(int i=0;i<hs.size();i++)
